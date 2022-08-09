@@ -168,6 +168,7 @@ def boost_deps():
         urls = [
             "https://mirror.bazel.build/zlib.net/zlib-1.2.11.tar.gz",
             "https://zlib.net/zlib-1.2.11.tar.gz",
+            "https://primihub.oss-cn-beijing.aliyuncs.com/tools/zlib-1.2.11.tar.gz",
         ],
     )
 
@@ -179,7 +180,10 @@ def boost_deps():
         build_file = "@com_github_nelhage_rules_boost//:BUILD.bzip2",
         sha256 = "ab5a03176ee106d3f0fa90e381da478ddae405918153cca248e682cd0c4a2269",
         strip_prefix = "bzip2-1.0.8",
-        url = "https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz",
+        urls = [
+            "https://primihub.oss-cn-beijing.aliyuncs.com/tools/bzip2-1.0.8.tar.gz",
+            "https://sourceware.org/pub/bzip2/bzip2-1.0.8.tar.gz",
+        ],
     )
 
     maybe(
@@ -202,6 +206,7 @@ def boost_deps():
         strip_prefix = "zstd-1.5.1",
         urls = [
             "https://github.com/facebook/zstd/releases/download/v1.5.1/zstd-1.5.1.tar.gz",
+            "https://primihub.oss-cn-beijing.aliyuncs.com/tools/zstd-1.5.1.tar.gz",
         ],
     )
 
@@ -216,6 +221,7 @@ def boost_deps():
         strip_prefix = "boost_1_79_0",
         urls = [
             "https://boostorg.jfrog.io/artifactory/main/release/1.79.0/source/boost_1_79_0.tar.gz",
+            "https://primihub.oss-cn-beijing.aliyuncs.com/boost_1_79_0.tar.gz",
         ],
     )
 
@@ -224,5 +230,8 @@ def boost_deps():
         name = "openssl",
         sha256 = "6f640262999cd1fb33cf705922e453e835d2d20f3f06fe0d77f6426c19257308",
         strip_prefix = "boringssl-fc44652a42b396e1645d5e72aba053349992136a",
-        url = "https://github.com/google/boringssl/archive/fc44652a42b396e1645d5e72aba053349992136a.tar.gz",
+        urls = [
+            "https://primihub.oss-cn-beijing.aliyuncs.com/tools/boringssl-fc44652a42b396e1645d5e72aba053349992136a.tar.gz",
+            "https://github.com/google/boringssl/archive/fc44652a42b396e1645d5e72aba053349992136a.tar.gz",
+        ],
     )
