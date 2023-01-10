@@ -205,7 +205,7 @@ def boost_deps():
         sha256 = "e28b2f2ed5710ea0d3a1ecac3f6a947a016b972b9dd30242369010e5f53d7002",
         strip_prefix = "zstd-1.5.1",
         urls = [
-            "https://github.com/facebook/zstd/releases/download/v1.5.1/zstd-1.5.1.tar.gz",
+            #"https://github.com/facebook/zstd/releases/download/v1.5.1/zstd-1.5.1.tar.gz",
             "https://primihub.oss-cn-beijing.aliyuncs.com/tools/zstd-1.5.1.tar.gz",
         ],
     )
