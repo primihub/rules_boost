@@ -199,7 +199,7 @@ def boost_deps():
     )
 
     maybe(
-        #http_archive,
+        http_archive,
         #name = "com_github_facebook_zstd",
         #build_file = "@com_github_nelhage_rules_boost//:BUILD.zstd",
         #sha256 = "e28b2f2ed5710ea0d3a1ecac3f6a947a016b972b9dd30242369010e5f53d7002",
